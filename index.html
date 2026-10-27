@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1B1030">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Маленький подарок: сердце из формулы, время вместе и теорема о любви.">
+<title>С годовщиной, моя любимая ❤️</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div class="aurora" aria-hidden="true">
+  <span class="aurora__blob aurora__blob--pink"></span>
+  <span class="aurora__blob aurora__blob--violet"></span>
+  <span class="aurora__blob aurora__blob--gold"></span>
+</div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="floaties" id="floaties" aria-hidden="true"></div>
+
+<main class="page">
+
+  <!-- ───────────────────────── ГЕРОЙ ───────────────────────── -->
+  <header class="hero">
+    <p class="kicker">26 октября 2025 → ∞</p>
+    <h1 class="hero-title">С годовщиной,<br><span class="hero-title__accent">моя любимая</span></h1>
+
+    <div class="heart-stage" id="heartStage">
+      <canvas id="heart" aria-hidden="true"></canvas>
+      <div class="heart-halo" aria-hidden="true"></div>
+    </div>
+
+    <p class="formula formula--heart">(x² + y² − 1)³ − x²y³ = 0</p>
+    <p class="formula-note">формула, из которой получается сердце</p>
+
+    <button class="ghost-btn hero-btn" type="button" data-burst>
+      <span aria-hidden="true">❤️</span> ещё сердечко
+    </button>
+
+    <p class="scroll-hint" aria-hidden="true">листай ниже <span>↓</span></p>
+  </header>
+
+  <!-- ───────────────────────── ВРЕМЯ ВМЕСТЕ ───────────────────────── -->
+  <section class="section reveal" id="timer" aria-labelledby="timer-title">
+    <p class="ornament" aria-hidden="true">✦</p>
+    <h2 class="section-title" id="timer-title">Время вместе</h2>
+    <p class="section-sub">тикает в реальном времени с 26 октября 2025, 00:00</p>
+
+    <div class="counter" role="timer" aria-live="off">
+      <div class="counter__cell">
+        <span class="counter__value" id="days">0</span>
+        <span class="counter__label">дней</span>
+      </div>
+      <div class="counter__cell">
+        <span class="counter__value" id="hours">00</span>
+        <span class="counter__label">часов</span>
+      </div>
+      <div class="counter__cell">
+        <span class="counter__value" id="minutes">00</span>
+        <span class="counter__label">минут</span>
+      </div>
+      <div class="counter__cell counter__cell--live">
+        <span class="counter__value" id="seconds">00</span>
+        <span class="counter__label">секунд</span>
+      </div>
+    </div>
+
+    <p class="counter-foot" id="counterFoot">считаю каждую секунду…</p>
+  </section>
+
+  <!-- ───────────────────────── ТЕОРЕМА ───────────────────────── -->
+  <section class="section reveal" id="theorem" aria-labelledby="theorem-title">
+    <p class="ornament" aria-hidden="true">✦</p>
+    <h2 class="section-title" id="theorem-title">Наша теорема</h2>
+    <p class="section-sub">доказано, проверено, обжалованию не подлежит</p>
+
+    <article class="card theorem">
+      <h3 class="theorem__h">Утверждение.</h3>
+      <p class="theorem__lead">
+        Среди всех людей на Земле существует ровно один человек, рядом с которым
+        время идёт быстрее, а жизнь становится лучше. Это <mark class="mark">ТЫ</mark>.
+      </p>
+
+      <h3 class="theorem__h">Доказательство.</h3>
+
+      <div class="theorem__method">
+        <p><span class="method">Методом от противного.</span>
+          Предположим, что существует кто-то лучше. Но тогда я бы встретил его,
+          а не тебя. Противоречие, так как я встретил тебя.</p>
+      </div>
+
+      <div class="theorem__method">
+        <p><span class="method">Методом математической индукции.</span></p>
+        <ul class="theorem__list">
+          <li><span class="term">База:</span> в первый день нашего знакомства я понял, что ты особенная.</li>
+          <li><span class="term">Шаг:</span> если ты была лучшей в день <em>n</em>, то в день <em>n+1</em> ты стала ещё лучше.</li>
+          <li><span class="term">Вывод:</span> значит, это верно для всех дней, включая сегодняшний.</li>
+        </ul>
+      </div>
+
+      <div class="theorem__method">
+        <p><span class="method">Предельный переход.</span>
+          <span class="lim">lim<sub>t → ∞</sub> любовь(t) = ∞.</span>
+          Сходимость доказана, расходимость невозможна.</p>
+      </div>
+
+      <div class="corollaries">
+        <p><span class="term">Следствие 1.</span> Каждая годовщина лишь подтверждает теорему.</p>
+        <p><span class="term">Следствие 2.</span> Автор теоремы обязуется продолжать доказательство всю жизнь.</p>
+      </div>
+
+      <p class="qed" aria-label="Что и требовалось доказать">∎</p>
+    </article>
+  </section>
+
+  <!-- ───────────────────────── ЭЙЛЕР ───────────────────────── -->
+  <section class="section reveal" id="euler" aria-labelledby="euler-title">
+    <p class="ornament" aria-hidden="true">✦</p>
+    <h2 class="section-title" id="euler-title">Красота в одной строке</h2>
+    <p class="section-sub">формула Эйлера — говорят, самая красивая в математике</p>
+
+    <div class="card euler">
+      <p class="euler__formula">e<sup>iπ</sup> + 1 = 0</p>
+      <p class="euler__text">
+        Пять фундаментальных констант — <em>e</em>, <em>i</em>, <em>π</em>, <em>1</em> и <em>0</em> —
+        сходятся в одном равенстве. Красиво.
+        Но самая красивая формула всё равно другая: <span class="accent">ты + я = ❤️</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── ПИСЬМО ───────────────────────── -->
+  <section class="section reveal" id="letter" aria-labelledby="letter-title">
+    <p class="ornament" aria-hidden="true">✦</p>
+    <h2 class="section-title" id="letter-title">Письмо для тебя</h2>
+    <p class="section-sub">можно перечитывать сколько угодно раз</p>
+
+    <article class="card letter">
+      <h3 class="letter__head" id="letter-head">С годовщиной, моя любимая! ❤️</h3>
+
+      <p>Ты просто лапочка. Такая прекрасная и обаятельная, что я до сих пор иногда не верю,
+        что ты рядом со мной. Твоя улыбка, твой смех и то, как ты умеешь поддержать,
+        делают мои дни ярче, а меня самого лучше.</p>
+
+      <p>Я очень сильно тебя люблю. И хочу сделать всё, чтобы ты была счастлива:
+        заботиться о тебе, радовать тебя, быть рядом и в радости, и в трудные дни.</p>
+
+      <p>А ещё я безумно жду нашего съезда. Просыпаться рядом, вместе готовить завтраки,
+        возвращаться домой и знать, что ты там. Это будет наш общий дом, и я сделаю всё,
+        чтобы тебе в нём было уютно и тепло.</p>
+
+      <p>Спасибо тебе за каждый наш день. Ты моя самая любимая девочка</p>
+
+      <p class="letter__sign">Твой ❤️</p>
+    </article>
+  </section>
+
+  <!-- ───────────────────────── ФОТО ───────────────────────── -->
+  <section class="section reveal" id="photo" aria-labelledby="photo-title">
+    <p class="ornament" aria-hidden="true">✦</p>
+    <h2 class="section-title" id="photo-title">Та самая</h2>
+    <p class="section-sub">нажми на фото, чтобы рассмотреть поближе</p>
+
+    <figure class="photo-card" id="photoCard">
+      <img src="assets/photo.jpg" alt="Наше фото вдвоём" width="720" height="1280" loading="eager" decoding="async">
+      <figcaption class="photo-card__caption">
+        <span>26.10.2025</span>
+        <span class="photo-card__dot" aria-hidden="true">❤</span>
+        <span>навсегда</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ───────────────────────── ФИНАЛ ───────────────────────── -->
+  <footer class="footer reveal">
+    <div class="footer__heart" aria-hidden="true">❤</div>
+    <p class="footer__main">Люблю тебя. Сильно-сильно.</p>
+    <p class="footer__sub">26.10.2025 — это только начало</p>
+  </footer>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Фото" hidden>
+  <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Закрыть фото">✕</button>
+  <img id="lightboxImg" src="assets/photo.jpg" alt="Наше фото вдвоём">
+</div>
+
+<noscript>
+  <p class="noscript">Включи JavaScript — без него не получится ни сердце, ни счётчик ❤️</p>
+</noscript>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
